@@ -1,0 +1,166 @@
+body {
+	margin:0px;
+	background-size: 100% 300%;
+	background-repeat: no-repeat;
+
+}
+
+nav{
+	width: 100%;
+	height: 500px;
+	margin: 10px auto 0px auto;
+	left:-120px;
+	position:fixed;
+	
+
+}
+
+.navLinkk{
+	width:10%;
+	height: 10%;
+	transform: matrix(1, 0, 0.5, 1, 150, 0);
+	background-color: darkgreen;
+	float:left;
+	margin-left:20px;
+	top:10px;
+	position: relative;
+	right:-10px;
+	box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.75);
+}
+
+#middleLink {
+	width:15%;
+	height: 10%;
+	transform: matrix(1, 0, 0, 1, 150, 0);
+	background-color: inherit;
+	float:left;
+	margin-left:20px;
+	text-align: center;
+	top:10px;
+	position: relative;
+	right:-10px;
+	box-shadow: 0px 0px 6px 3px rgba(0,0,0,0);
+}
+
+#middleLink img{
+	width:100%;
+	margin-top:5px;
+}
+
+
+.bakgrund{
+	width:90%;
+	height: 15%;
+	transform: matrix(1, 0, 0.5, 1, 150, 0);
+	background-color: green;
+	float:left;
+	margin-left:20px;
+	top:-50px;
+	position: relative;
+	z-index: -1;
+
+}
+
+
+
+.sokruta{
+	position:relative;
+	float:right;
+	top:25px;
+	right:250px;
+	}
+
+	#search {
+		width:150%;
+		height:50px;
+		border-radius: 10px;
+		font-size: 17pt;
+		background-color: rgb(0,0,100);
+	}
+
+	.container-1{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  float:right;
+  top:14px;
+}
+
+.container-1 input#search{
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: right;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 20px 3px rgba(0,0,0,0.75);
+
+   /* On "top" */
+  background:
+  repeating-linear-gradient(
+    45deg,
+    transparent,
+     1px,
+    #63790f 1px,
+    #63717f 1.09px
+  ),
+  /* on "bottom" */
+  linear-gradient(
+    to bottom,
+    #63790f,
+    #63790f
+  );
+
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-1 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.container-1 .icon{
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+  }
+#brada {
+	position: fixed;
+	height:10%;
+	width: 20%;
+	left: 670px;
+	top:3%;
+
+
+}
+
+#Board{
+position:relative;
+top:50%;
+left:50%;
+z-index: 1337;
+}
