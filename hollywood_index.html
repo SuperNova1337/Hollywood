@@ -40,11 +40,13 @@
 
 
 <img id="Board" src="longboard_slideshow.png" onmousedown="funktion()">
-
+<img src="arrow_right.png" id="right" onmousedown="funktion()">
+<img src="arrow_right.png" id="left" onmousedown="funktion2()">
 <script>
-var count = 0;
-function funktion(){
-  count += 1;
+var count = 1;
+
+function funktion(){				//Bilden som visas är 1 från början. Första if statement kommer inte köras första gången då count ++ gör att bild 2 visas. När du tryckt 1 gång mer än det finns bilder så kommer 1:a bilden att visas igen.
+	count ++;
   if (count==1){
       document.getElementById("Board").src="longboard_slideshow.png";
   }
@@ -53,9 +55,28 @@ function funktion(){
   }
   else if (count==3){
       document.getElementById("Board").src="kundtjanst.png";
-      count = 0;
-      
   }
+  else if (count==4) {
+  	document.getElementById("Board").src="longboard_slideshow.png";
+  	count = 1;
+  };
+}
+
+function funktion2(){			//Om du har bläddrat fram till count = 2. Så tar den count -- vilket går tillbaka till bilden innan. Om du går tillbaka en till gång blir count 0. Då kommer den att göra count till 3. Dvs bilden innan 1:a bilden. Därifrån kommer den att räkna ner igen och göra om samma sak.
+	count --;
+  if (count == 1){
+      document.getElementById("Board").src="longboard_slideshow.png";
+  }
+  else if (count ==2){
+      document.getElementById("Board").src="om_oss.png";
+  }
+  else if (count==3){
+      document.getElementById("Board").src="kundtjanst.png";
+  }
+  else if (count==0) {
+  	document.getElementById("Board").src="kundtjanst.png";
+  	count = 3;
+  };
 }
 </script>
 
