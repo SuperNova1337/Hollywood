@@ -11,8 +11,13 @@ nav{
 	margin: 10px auto 0px auto;
 	left:-120px;
 	position:fixed;
-	
-
+}
+#nav{
+	width: 100%;
+	height: 100px;
+	margin: 0px auto 0px auto;
+	left:-120px;	
+	background-color: none;
 }
 
 .navLinkk{
@@ -159,21 +164,26 @@ nav{
 }
 
 #Board{
-position:relative;
-top:50%;
-left:50%;
+margin-left: auto;
+margin-right: auto;
+display: block;
 z-index: 1337;
+width: 426px;
+height: 355px;
 }
 #left{
 	position: absolute;
-	left: 0pt;
+	left: 275pt;
+	top:300pt;
 	bottom: 0pt;
 	width: 100px;
 	height: 100px;
+
 }
 #right{
 	position: absolute;
-	right: 0pt;
+	top:300pt;
+	right: 275pt;
 	bottom: 0pt;
 	width: 100px;
 	height: 100px;
