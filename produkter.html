@@ -7,9 +7,32 @@
 	
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="Hollywood.css" />
+		<link rel="stylesheet" href="Hollywood_produkter.css" />
 
 		
+		<script>
 
+
+		function buyItem(item,price){
+			document.getElementById('container-sale').style.display ="block";
+			var pix = 250;
+			var time = setInterval(function(){
+				pix -=7;
+					document.getElementById('container-sale').style.marginTop = pix + "px";
+					if(pix <= -130){
+						clearInterval(time);
+					}
+			},1);
+		}
+		function bort () {
+			document.getElementById('container-sale').style.display ="none";
+		
+
+
+		}
+
+
+		</script>
 
 	</head>
 <body>
@@ -31,12 +54,112 @@
       </div>
   </nav>
 
+<div class ="ITEMCONTAINER">
+
+	<div class="itemPicture">
+		<img src="arrow_right.png" alt="Vara" />
+	</div>
+
+	<div class="itemName">
+		<p> Vanguard <p/>
+	</div>
+	
+	<div class="itemPrice">
+		<p> 3080 kr </p>
+	</div>
+	
+	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
+		<p> Köp</p>
+	</div>
+
+</div>
+
+<div class ="ITEMCONTAINER">
+
+	<div class="itemPicture">
+		<img src="arrow_right.png" alt="Vara" />
+	</div>
+
+	<div class="itemName">
+		<p> Vanguard <p/>
+	</div>
+	
+	<div class="itemPrice">
+		<p> 3080 kr </p>
+	</div>
+	
+	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
+		<p> Köp</p>
+	</div>
+
+</div>
+
+<div class ="ITEMCONTAINER">
+
+	<div class="itemPicture">
+		<img src="arrow_right.png" alt="Vara" />
+	</div>
+
+	<div class="itemName">
+		<p> Vanguard <p/>
+	</div>
+	
+	<div class="itemPrice">
+		<p> 3080 kr </p>
+	</div>
+	
+	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
+		<p> Köp</p>
+	</div>
+
+</div>
+
+<div class ="ITEMCONTAINER">
+
+	<div class="itemPicture">
+		<img src="arrow_right.png" alt="Vara" />
+	</div>
+
+	<div class="itemName">
+		<p> Vanguard <p/>
+	</div>
+	
+	<div class="itemPrice">
+		<p> 3080 kr </p>
+	</div>
+	
+	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
+		<p> Köp</p>
+	</div>
+
+</div>
+
+<div class ="ITEMCONTAINER">
+
+	<div class="itemPicture">
+		<img src="arrow_right.png" alt="Vara" />
+	</div>
+
+	<div class="itemName">
+		<p> Vanguard <p/>
+	</div>
+	
+	<div class="itemPrice">
+		<p> 3080 kr </p>
+	</div>
+	
+	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
+		<p> Köp</p>
+	</div>
+
+</div>
+
+<div id="container-sale" onmousedown="bort()">
+	<p> Tack för ditt köp </p>
+</div>
 
 
-
-  <div class="hjalppp">
-     <h2> hjälp </h2>
-    </div>
+  
 
 
 </body>
