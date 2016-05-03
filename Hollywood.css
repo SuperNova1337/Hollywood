@@ -154,7 +154,23 @@ nav{
 }
 
 .hjalppp{
+	position: relative;
 	border-radius: 22px 22px;
 	border-color: red;
 	background-color: red;
+	border:solid 3px black;
+	width: 17%;
+	height:17%;
+	text-align: center;
+	margin-top:60%;
+	background-color: rgba(0, 111, 187, 1);
+	left:10px;
+}
+
+.hjalppp h2{
+	color: white;
+}
+
+.hjalppp:hover{
+	background-color: rgba(0, 132, 219, 1);
 }
