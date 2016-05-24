@@ -190,6 +190,7 @@ background-color: rgba(63,168,14,1);
 box-shadow: 3px 3px 6px 3px rgba(0,0,0,0.75);
 bottom: -100px;
 z-index: -1337;
+border-top:solid black;
 
 }
 

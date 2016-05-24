@@ -44,9 +44,9 @@
     </div>
 </div>
 <div id="left1">
-<img src="arrow_right_fixed.png" id="left" alt="regeringen spionerar på dig" onmousedown="funktion()">
-<img id="Board" src="longboard_slideshow.png" alt="regeringen spionerar på dig" onmousedown="funktion()">
-<img src="arrow_right_fixed.png" id="right" alt="regeringen spionerar på dig" onmousedown="funktion2()">
+<img src="arrow_right_fixed.png" id="left" alt="regeringen spionerar på dig" onmousedown="funktion2()">
+<a id="lank" href="produkter.html"><img id="Board" src="longboard_slideshow.png" alt="regeringen spionerar på dig"></a>
+<img src="arrow_right_fixed.png" id="right" alt="regeringen spionerar på dig" onmousedown="funktion()">
 
 </div>
 
@@ -57,16 +57,20 @@ var count = 1;
 function funktion(){				//Bilden som visas är 1 från början. Första if statement kommer inte köras första gången då count ++ gör att bild 2 visas. När du tryckt 1 gång mer än det finns bilder så kommer 1:a bilden att visas igen.
 	count ++;
   if (count==1){
-      document.getElementById("Board").src="longboard_slideshow.png";
+     document.getElementById("Board").src="longboard_slideshow.png";
+     document.getElementById("lank").href="produkter.html";          //Länkar till produktsidan.
   }
   else if (count==2){
-      document.getElementById("Board").src="om_oss.png";
+      document.getElementById("Board").src="kundtjanst.png";
+      document.getElementById("lank").href="kundtjanst.html";   //ÄNDRA DETTA SEN
   }
   else if (count==3){
-      document.getElementById("Board").src="kundtjanst.png";
+      document.getElementById("Board").src="om_oss.png";
+      document.getElementById("lank").href="om_oss.html";   //ÄNDRA DETTA SEN   
   }
   else if (count==4) {
   	document.getElementById("Board").src="longboard_slideshow.png";
+    document.getElementById("lank").href="produkter.html";   
   	count = 1;
   };
 }
@@ -75,15 +79,19 @@ function funktion2(){			//Om du har bläddrat fram till count = 2. Så tar den c
 	count --;
   if (count == 1){
       document.getElementById("Board").src="longboard_slideshow.png";
+      document.getElementById("lank").href="produkter.html";
   }
   else if (count ==2){
-      document.getElementById("Board").src="om_oss.png";
+      document.getElementById("Board").src="kundtjanst.png";
+      document.getElementById("lank").href="kundtjanst.html";   //ÄNDRA DETTA SEN
   }
   else if (count==3){
-      document.getElementById("Board").src="kundtjanst.png";
+      document.getElementById("Board").src="om_oss.png";
+      document.getElementById("lank").href="om_oss.html";   //ÄNDRA DETTA SEN
   }
   else if (count==0) {
-  	document.getElementById("Board").src="kundtjanst.png";
+  	document.getElementById("Board").src="om_oss.png";
+    document.getElementById("lank").href="om_oss.html";   //ÄNDRA DETTA SEN
   	count = 3;
   };
 }
