@@ -9,10 +9,18 @@
 		<link rel="stylesheet" href="Hollywood.css" />
 
 		
+<script>
+
+function footerPosition(){
+  if(Number(window.getComputedStyle(document.body).getPropertyValue('height').substr(0,3))<600){ // Är höjden på body mindre än 600
+      document.getElementsByClassName("footer")[0].style.position ="absolute"; // Ändra footer position till absolute
+  }
+}
+</script>
 
 
 	</head>
-<body>
+<body onload="footerPosition()">
 
   <nav>
 
@@ -34,7 +42,7 @@
 
 
 
-
+<div style="min-height:100%;position:relative;">
 
 
 <div id="wrapper1" >
@@ -51,6 +59,9 @@
 </div>
 
 </div>
+</div>
+
+
 <script>
 var count = 1;
 
