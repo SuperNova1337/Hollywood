@@ -10,11 +10,18 @@
 		<link rel="stylesheet" href="Hollywood_produkter.css" />
 		<link rel="stylesheet" href="kundtjanst.css" />
 
-
+	<script>
+	
+function footerPosition(){
+  if(Number(window.getComputedStyle(document.body).getPropertyValue('height').substr(0,3))<600){ // Är höjden på body mindre än 600
+      document.getElementsByClassName("footer")[0].style.position ="absolute"; // Ändra footer position till absolute
+  }
+}
+	</script>
 		
 
 	</head>
-<body>
+<body onLoad="footerPosition()">
 
   <nav>
 
@@ -33,19 +40,6 @@
       </div>
   </nav>
 
-
-
-<div class ="Helaskiten">
-
-<div class ="head"> <p> huvud </p></div>
-<div class="ruta"> <p> innehåll </p></div>
-</div>
-
-<div class ="Helaskiten">
-
-<div class ="head"> <p> huvud </p></div>
-<div class="ruta"> <p> innehåll </p></div>
-</div>
 
   <div class="footer">
 
