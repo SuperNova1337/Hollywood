@@ -10,32 +10,12 @@
 		<link rel="stylesheet" href="Hollywood_produkter.css" />
 
 		
-		<script>
 
 
-		function buyItem(item,price){
-			document.getElementById('container-sale').style.display ="block";
-			var pix = 250;
-			var time = setInterval(function(){
-				pix -=7;
-					document.getElementById('container-sale').style.marginTop = pix + "px";
-					if(pix <= -130){
-						clearInterval(time);
-					}
-			},1);
-		}
-		function bort () {
-			document.getElementById('container-sale').style.display ="none";
 		
 
-
-		}
-
-
-		</script>
-
 	</head>
-<body onLoad="footerPosition()">
+<body>
 
   <nav>
 
@@ -45,7 +25,7 @@
 
 		<a  href="produkter.html"><div class="navLinkk"><h2> Produkter </h2></div></a>
 
-		<a  href="kundtjanst.html"><div class="navLinkk"><h2> hem </h2></div></a>
+		<a  href="kundtjanst.html"><div class="navLinkk"><h2> Kundtjänst </h2></div></a>
 
     <a  href="hollywood_index.html"><div class="navLinkk"><h2> hem </h2></div></a>
       <div class="container-1">
@@ -56,10 +36,38 @@
 
   <main>
 
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+ 
+
+
+<!-- Modal content -->
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close">×</span>
+    <h2>Modal Header</h2>
+  </div>
+  <div class="modal-body">
+    <p>Some text in the Modal Body</p>
+    <p>Some other text...</p>
+  </div>
+  <div class="modal-footer">
+    <h3>Modal Footer</h3>
+  </div>
+</div>
+</div>
+
+
+
+
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/brada.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
@@ -68,6 +76,26 @@
 	
 	<div class="itemPrice">
 		<p> 3080 kr </p>
+	</div>
+	
+	<div class="itemBuy">
+		<p> Köp</p>
+	</div>
+
+</div>
+
+<div class ="ITEMCONTAINER">
+
+	<div class="itemPicture">
+		<img src="Produkter_bilder/padang 41.jpg" alt="Vara" />
+	</div>
+
+	<div class="itemName">
+		<p> Padang 41 </p>
+	</div>
+	
+	<div class="itemPrice">
+		<p> 1799 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -79,15 +107,15 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/Panda.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> Panda flex2 </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 2799 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -99,15 +127,15 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/Urskog Kvist Valnöt.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> Urskog Valnöt </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 3099 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -119,15 +147,15 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/Beetle 37.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> Beetle 37 </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 1699 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -139,15 +167,15 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/Stimulus.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> Stimulus 70mm </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 599 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -159,15 +187,15 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/Durian.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> Durian 75mm </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 649 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -179,15 +207,15 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/Chrono.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> Chrono 70x53mm </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 549 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -199,15 +227,15 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/Zigzag.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> Zigzag 70mm </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 549 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -219,15 +247,15 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/Titans.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> Titans 70x38mm </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 499 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -239,15 +267,15 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/Forged hollow.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> Forged Hollow </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 799 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -259,15 +287,15 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/149 Forged hollow.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> 149 stage 11  </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 749 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -279,15 +307,15 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/Salzar.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> SalzarDoomsayers </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 799 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -299,15 +327,15 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/JART.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> Jart ABEC 7 </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 199 kr </p>
 	</div>
 	
 	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
@@ -319,38 +347,18 @@
 <div class ="ITEMCONTAINER">
 
 	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
+		<img src="Produkter_bilder/Paul.jpg" alt="Vara" />
 	</div>
 
 	<div class="itemName">
-		<p> Vanguard </p>
+		<p> Paul Rodriguez </p>
 	</div>
 	
 	<div class="itemPrice">
-		<p> 3080 kr </p>
+		<p> 499 kr </p>
 	</div>
 	
-	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
-		<p> Köp</p>
-	</div>
-
-</div>
-
-<div class ="ITEMCONTAINER">
-
-	<div class="itemPicture">
-		<img src="arrow_right.png" alt="Vara" />
-	</div>
-
-	<div class="itemName">
-		<p> Vanguard </p>
-	</div>
-	
-	<div class="itemPrice">
-		<p> 3080 kr </p>
-	</div>
-	
-	<div class="itemBuy" onmousedown="buyItem('Tröja',3000)">
+	<div class="itemBuy">
 		<p> Köp</p>
 	</div>
 
@@ -362,10 +370,50 @@
 </div>
 
 
-  <div class="footer">
+
+
+  <div class="footer"> <p> All form utav innehåll på denna sida ägs av Skynet. Missbruk beivras! Återförsäljning av produkter godtas ej. Se vår policy i reklamblad i närmsta affär. Marley was dead: to begin with. There is no doubt whatever about that. The register of his burial was signed by the clergyman, the clerk, the undertaker, and the chief mourner. Scrooge signed it. And Scrooge's name was good upon 'Change, for anything he chose to put his hand to. ld Marley was as dead as a door-nail.
+
+Mind! I don't mean to say that I know, of my own knowledge, what there is particularly dead about a door-nail. . I might have been inclined, myself, to regard a coffin-nail as the deadest piece </p>
 
 </div>
 
-</head>
+
+
+<script>
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var itemBuy = document.getElementsByClassName("itemBuy");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+length = itemBuy.length;
+
+for(i=0; i<length;i++){
+	itemBuy[i].onmousedown = function() {
+	    modal.style.display = "block";
+	}
+}
+
+
+// When the user clicks on <span> (x), close the modal
+span.onmousedown = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+</script>
 </body>
 

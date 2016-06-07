@@ -5,10 +5,11 @@ float:left;
 width: 350px;
 height: 300px;
 border: solid;
-background-color: rgba(188, 169, 45, 1.00);
+background-color: rgba(146, 205, 19, 1.00);
 margin-top: 100px;
-margin-left: 5%;
+margin-left: 15%;
 border-radius: 10px;
+box-shadow: 10px 10px 5px #180606;
 }
 
 .head{
@@ -27,13 +28,39 @@ margin:0 auto;
  box-shadow: 10px 10px 5px #180606;
 }
 
+.head p{
+text-align: center;
+	}
+
 .ruta{
 
 width: 100%;
-height: 78%;
+height: 78%;    /*78*/
 top:-2%;
 position: relative;
 background-color: rgba(146, 205, 19, 1.00);
 border-radius: 10px;
 
 	}
+
+	.ruta p{
+		text-align: center;
+	}
+
+.Storskit{
+	position: absolute;
+	z-index: -420;
+	width: 80%;
+	height: 60%;
+	background-color: #216336;
+	border: solid;
+	margin-top: 50px;
+	margin-left: 100px;
+
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+ box-shadow: 10px 10px 5px #180606;
+}
+
+} 

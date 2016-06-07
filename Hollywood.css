@@ -195,6 +195,11 @@ border-top:solid black;
 
 }
 
+.footer p{
+	font-size: 10px;
+	color: #27342B;
+}
+
 @keyframes fadein {
 	from {opacity: 0;}
 	to {opacity: 1;}
