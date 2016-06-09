@@ -1,0 +1,398 @@
+
+	
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Läskuppen </title>
+	<link rel="icon" href="/images/logo.png" type="image/x-icon">
+<style>
+html {
+	animation: fadein 0.2s;
+}
+body {
+	margin:0px;
+	background-color: lightgreen;
+
+}
+
+nav{
+	margin-top:10px;
+	width: 1300px;
+	height: 70px;
+	transform: matrix(1, 0, 0.5, 1, 25, 0);
+	background-color: darkgreen;
+}
+
+
+
+#wrapper1{
+	margin-top:50px;
+	height:350px;
+	/*background-color: yellow;*/
+	background-color: rgba(63,168,14,1);
+	box-shadow: 3px 3px 6px 3px rgba(0,0,0,0.75);
+}
+
+.navLinkk{
+	width:10%;
+	height: 50px;
+	background-color: darkgreen;
+	float:left;
+	margin-top:8px;
+	margin-right:22px;
+	box-shadow: 3px 3px 6px 3px rgba(0,0,0,0.75);
+	transition: box-shadow 0.2s;
+}
+.navLinkk:hover{
+	box-shadow: 3px 3px 6px 6px rgba(0,0,0,0.75);
+}
+
+
+.navLinkk h2{
+	transform: matrix(1, 0, -0.5, 1, 0, 0);
+	text-align: center;
+	line-height: 50px;
+	margin:0px;
+
+}
+
+#middleLink {
+	transform: matrix(-1, 0, -0.5, 1, 0, 0);
+	background-image:url('vanguard_logo_asnice2.png');
+	background-size: 100% 100%;
+	width:15%;
+	background-color: inherit;
+	float:left;
+	margin-left:20px;
+	box-shadow:none;
+}
+
+
+#right1{
+	float:left;
+	height:100%;
+	width:50%;
+
+}
+#left1{
+	width:50%;
+	float:left;
+	height:100%;
+}
+
+
+.container-1{
+	transform: matrix(1, 0, -0.5, 1, 10, 0);
+	position: relative;
+	float:left;
+	margin-left:100px;
+	top:8px;
+}
+
+.container-1 input#search{
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: right;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 20px 3px rgba(0,0,0,0.75);
+
+   /* On "top" */
+  background:
+  repeating-linear-gradient(
+    45deg,
+    transparent,
+     1px,
+    #63790f 1px,
+    #63717f 1.09px
+  ),
+  /* on "bottom" */
+  linear-gradient(
+    to bottom,
+    #63790f,
+    #63790f
+  );
+
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-1 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+
+
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+  }
+
+#Board{
+	display: block;
+	width: 420px;
+	height: 350px;
+	float:left;
+	margin-left:-210px;
+}
+
+#left{
+	width: 100px;
+	height: 100px;
+	float:left;
+	margin-top:125px;
+	margin-left:-310px;
+}
+#right{
+	margin-top:125px;
+	float:left;
+	width: 100px;
+	height: 100px;
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+
+.hjalppp{
+	position: relative;
+	border-radius: 22px 22px;
+	border-color: red;
+	background-color: red;
+	border:solid 3px black;
+	width: 17%;
+	height:17%;
+	text-align: center;
+	margin-top:60%;
+	background-color: rgba(0, 111, 187, 1);
+	left:10px;
+}
+
+.hjalppp h2{
+	color: white;
+}
+
+.hjalppp:hover{
+	background-color: rgba(0, 132, 219, 1);
+}
+
+.footer{
+position:relative;
+width: 100%;
+height: 50px;
+bottom:0px;
+margin-top:40px;
+background-color: rgba(63,168,14,1);
+box-shadow: 3px 3px 6px 3px rgba(0,0,0,0.75);
+z-index: -1337;
+border-top:solid black;
+
+}
+
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	overflow-x: hidden;
+	max-width:100%;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+header {
+	background:rgba(153,217,234,1);
+	padding:10px;
+	min-width:1300px;
+	height:40px;
+	border-bottom:2px solid black;
+}
+
+#header{
+	float:left;
+	text-align:center;
+	height:40px;
+	padding:0px;
+	font-size:33px;
+	width:70%;
+	font-weight:bold;
+	min-width:900px;
+
+}
+#name{
+	padding:0px;
+	padding-top:20px;
+	height:20px;
+	float:left;
+	width:20%;
+	min-width:200px;
+	font-size:15px;
+}
+
+#admin{
+	padding:0px;
+	padding-top:20px;
+	height:20px;
+	float:left;
+	width:10%;
+	min-width:100px;
+	font-size:15px;
+}
+
+header a{
+	color:red;
+	text-decoration:none;	
+}
+main {
+	min-width:1300px;
+
+	padding-bottom:65px; /* Height of the footer element */
+}
+footer {
+	padding:0px;
+	padding-top:8px;
+	background:rgb(0,105,150);
+	width:100%;
+	height:20px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	min-width:1300px;
+	border-top:2px solid black
+}
+footer p{
+	margin:0px;
+}
+footer a{
+	color:black;
+	text-decoration:none;
+	padding-left:10px;
+	margin-left:10px;
+	border-left:2px solid black;
+}
+footer span{
+	margin:0px auto;
+}
+
+header p{
+	margin:0px;
+	padding:5px;
+	text-align:center;
+	color:black;
+	font-size:30px;
+}
+
+textarea {
+   resize: none;
+}
+
+#addBook{
+	padding:25px;
+}
+
+#login-form{
+	padding:25px;
+}
+
+.margin-left-200{
+	margin-left:150px;
+}
+
+
+form{
+	margin:0px auto;
+	width:300px;
+}
+#books-table-first{
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+}
+#books-table {
+	margin:0px auto;
+	border:2px solid black;
+}
+#books-table tbody{
+
+}
+#books-table tr{
+	margin:-1px;
+
+}
+#books-table td{
+	
+	border:solid black 2px;
+	margin:-20px;
+	width:auto;
+
+}
+
+</stylE>
+<meta charset="UTF-8">
+	
+</head>
+
+<body>
+
+	<div id="wrapper">
+		
+		
+<nav>
+
+		<div class="navLinkk" id="middleLink"> </div>
+
+		<a  href="hollywood_index.html"><div class="navLinkk"><h2> hem </h2></div></a>
+
+		<a  href="produkter.html"><div class="navLinkk"><h2> Produkter </h2></div></a>
+
+		<a  href="hollywood_index.html"><div class="navLinkk"><h2> hem </h2></div></a>
+
+    <a  href="hollywood_index.html"><div class="navLinkk"><h2> hem </h2></div></a>
+      <div class="container-1">
+        <span class="icon"><i class="fa fa-search"></i></span>
+        <input type="search" id="search" placeholder="Search..." />
+      </div>
+  </nav>
+		
+		<main>
+			<p style="padding:100px 0px 0px 100px;"> 
+				    Nu fungerar läskuppen som den ska igen! <br> 
+				    När man lägger in en ny recension så kan man inte använda följande tecken: < > { } = .<br></p>
+				    <p style="color:red;padding-left:100px;">
+				    När man lägger in en ny recension så måste den godkännas av högre makter. Till dess får man snällt vänta på att poängen skall trilla in.
+				    </p>		
+		</main>
+			
+		<footer>
+		    <center>
+    
+    <p>BETA version 1.1 <a href="index.php?page=faq"> Frågor och Svar </a></p>
+
+</center>		</footer>
+		
+	</div><!-- #wrapper -->
+	
+</body>
+
+</html>
+
