@@ -1,4 +1,3 @@
-
 		function detectmob() { 
 				 if( navigator.userAgent.match(/Android/i)
 				  || navigator.userAgent.match(/webOS/i)
@@ -14,11 +13,16 @@
 
 
 
-		function onSiteLoad(){
-    if(detectmob()){
 
-       document.getElementById("wrapper1").style.marginLeft = " 420px";
-    }
+	function onSiteLoad(){
+	    if(detectmob()){
+
+	    	
+
+	       document.getElementById("wapper1").style.width = "100%";
+	       document.getElementById("search").style.width = "200px";
+	       document.getElementById("search").style.marginLeft = "-50px";
+	    }
 }
 		
 
